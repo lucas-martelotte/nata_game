@@ -1,1 +1,1 @@
-# john_love_game
+# JL Game
