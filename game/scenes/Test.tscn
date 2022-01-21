@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Resources/Images/Locations/Acropolis/Tiles/Wall1_TileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://scenes/characters/john_love/JohnLove.tscn" type="PackedScene" id=2]
 
 [node name="Root" type="Node2D"]
 
@@ -21,3 +22,9 @@ tile_set = ExtResource( 1 )
 cell_size = Vector2( 1440, 1146 )
 format = 1
 tile_data = PoolIntArray( -131068, 23, 0, -65534, 17, 0, -65533, 23, 0, -65532, 22, 0, 3, 22, 0 )
+
+[node name="John Love" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 2, 2 )
